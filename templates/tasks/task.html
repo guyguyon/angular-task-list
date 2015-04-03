@@ -1,0 +1,9 @@
+<div class="done-{{task.done}}" ng-click="showEditTask()">
+    <input type="checkbox" ng-model="task.done"/>
+    <b>{{task.description}}</b> by {{task.assignee}} till {{printDueDate(task)}}
+</div>
+
+<div class="edit-form" ng-show="show_edit">
+    <ng-tasks-form task="task" assignees="assignees"></ng-tasks-form>
+    <button class="btn btn-primary" ng-click="hideEditTask()">Done</button>
+</div>

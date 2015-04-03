@@ -1,0 +1,31 @@
+<div class="header">
+    <div><h1>Task List</h1></div>
+</div>
+
+<div class="list">
+    <h3>Task to complete:</h3>
+    <ul>
+        <li ng-repeat="task in tasks | filter:{done:false} | orderBy:'due_date':true">
+            <ng-task task="task"></ng-task>
+        </li>
+    </ul>
+</div>
+<div class="list">
+    <h3>Task Completed:</h3>
+    <ul>
+        <li ng-repeat="task in tasks | filter:{done:true} | orderBy:'due_date':true">
+            <ng-task task="task"></ng-task>
+        </li>
+    </ul>
+</div>
+
+
+<div class="new-form">
+    <h3>Add new task</h3>
+
+    <ng-tasks-form task="task"></ng-tasks-form>
+    <div class="form-group">
+        <button class="btn btn-primary" ng-click="addTask(task)">Add task</button>
+    </div>
+</div>
+

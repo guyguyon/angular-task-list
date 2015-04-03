@@ -1,0 +1,39 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
+
+.done-true {
+    text-decoration: line-through;
+}
+
+.header{
+    background-color: lightgray;
+    text-align: center;
+    padding: 30px;
+}
+
+.header h1{
+
+    margin: 0;
+}
+
+.list{
+    margin: 30px;
+    padding: 20px;
+    border: 1px lightblue solid;
+}
+.list ul {
+    list-style-type: none;
+}
+
+.new-form{
+    width: 50%;
+    margin: 30px;
+    padding: 20px;
+}
+
+.edit-form{
+    width: 50%;
+    margin: 20px;
+}
